@@ -1,46 +1,59 @@
-# student-rank-predictor
-a. Project Overview:
-     Title: Student Rank Predictor
+# StudentRankPredictor
 
-     Description: A simple application to predict student ranks based on inputs like their name. The system can store past predictions and visualize them.
-     
-     Technologies Used: Angular 14+, Tailwind CSS, TypeScript, GitHub Pages (or any other hosting platform).
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
 
-b. Setup Instructions:
+## Development server
 
-    Prerequisites:
+To start a local development server, run:
 
-          Install Node.js (v14 or later).
+```bash
+ng serve
+```
 
-         Install Angular CLI using the command:
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-                 npm install -g @angular/cli
-         
-         To install the dependencies, run:
+## Code scaffolding
 
-                 npm install
-         
-         To run the application locally:
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-                ng serve
+```bash
+ng generate component component-name
+```
 
-                Open your browser and navigate to http://localhost:4200.
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-c. Project Approach:
-       User Input: A student’s name is taken as input to predict their rank.
+```bash
+ng generate --help
+```
 
-         Rank Prediction Logic: The rank is generated randomly (or based on a predefined model/logic).
+## Building
 
-         Previous Predictions: A history of predictions is stored and displayed.
+To build the project run:
 
-         Technologies: Standalone Angular components were used, Tailwind CSS for styling, and localStorage to maintain data persistence.
+```bash
+ng build
+```
 
-d. Key Features:
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-        Dynamic input form for student names.
+## Running unit tests
 
-        Predicts and displays rank.
-       
-       Stores previous predictions locally.
-       
-       Responsive UI using Tailwind CSS.
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
