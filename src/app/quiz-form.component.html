@@ -1,0 +1,33 @@
+<div class="max-w-md mx-auto p-4 bg-white shadow-md rounded-md">
+  <!-- Input for student name -->
+  <div>
+    <label for="studentName" class="block mb-2">Enter Student Name</label>
+    <input
+      id="studentName"
+      [(ngModel)]="studentName"
+      type="text"
+      placeholder="Enter name"
+      class="border p-2 rounded w-full"
+    />
+  </div>
+
+  <!-- Button to predict rank -->
+  <button (click)="predictRank()" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded w-full">
+    Predict Rank
+  </button>
+
+  <!-- Display predicted rank -->
+  <div *ngIf="predictedRank !== null" class="mt-4">
+    <p><strong>Predicted Rank:</strong> {{ predictedRank }}</p>
+  </div>
+
+  <!-- Display previous predictions -->
+  <div *ngIf="previousPredictions.length > 0" class="mt-4">
+    <h3 class="font-bold">Previous Predictions</h3>
+    <ul>
+      <li *ngFor="let record of previousPredictions">
+        {{ record.name }} - Rank: {{ record.rank }}
+      </li>
+    </ul>
+  </div>
+</div>
